@@ -7,9 +7,16 @@
 
   <ion-content>
     <ion-list>
+      
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+          
+          <ion-icon name="ios-bug" item-start></ion-icon>
         {{p.title}}
+    <p>click here to open...</p>
+    
+    <button ion-button clear item-end>View</button>
       </button>
+      
     </ion-list>
   </ion-content>
 

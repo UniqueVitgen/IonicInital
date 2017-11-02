@@ -1,12 +1,25 @@
-page-home {
+page-sample-modal {
 
 }
 
-ion-textarea{border: 1px solid grey;
+#footer {
+  position: fixed; /* Фиксированное положение */
+  right:5;bottom:0; /* Левый нижний угол */
+  margin-right: 5; 
+  width: 80%;
+  padding: 10px; /* Поля вокруг текста */
+  color: #fff; /* Цвет текста */
+ }
+
+ textarea {
   overflow: hidden; /* или auto */
   height: 80%;
-  max-height: 200px;
-  max-width: 500px;
+  border: 1px solid grey;
+}
+
+ ion-textarea{border: 1px solid grey;
+  overflow: hidden; /* или auto */
+  height: 80%;
   border: 1px solid grey;
  }
 
