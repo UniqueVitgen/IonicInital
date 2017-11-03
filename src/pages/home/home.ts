@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, ModalController, ViewController } from 'ionic-angular';
+import { NavController, ModalController} from 'ionic-angular';
 import { SampleModalPage } from '../sample-modal/sample-modal';
 
 @Component({
@@ -21,7 +21,8 @@ export class HomePage {
       myModal.present();
 
       myModal.onDidDismiss(data => {
-        this.text = data;
+        if(data.answer)
+        this.text = data.text;
       });
     }
 

@@ -15,5 +15,12 @@
 
 <ion-content padding>
   <ion-textarea [(ngModel)]="text"></ion-textarea>
-  <button id="footer" ion-button  (click)="closeModal()">Close Modal</button>
+  <button round id="footer" ion-button  
+  (click)="success()">Pass data</button>
+  
+  <ion-row center>  
+      <ion-col text-center>  
+   <button round id = "cancel" ion-button  (click)="cancel()">Cancel</button>
+  </ion-col> 
+</ion-row>
 </ion-content>
